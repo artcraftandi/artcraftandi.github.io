@@ -66,5 +66,25 @@ jQuery(function($) {'use strict',
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
-	});	
+	});
+        
+        // jQuery for page scrolling feature - requires jQuery Easing plugin
+        $(function() {
+            $('a.page-scroll').bind('click', function(event) {
+                var $anchor = $(this);
+                console.log($(this).parent());
+                $('a').parent().each(function () {
+                    $(this).removeClass('active');
+                })
+                $(this).parent('li').addClass('active');
+
+
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+            
+        });
+
 });
