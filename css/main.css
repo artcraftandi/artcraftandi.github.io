@@ -106,6 +106,10 @@ a:focus {
   margin-bottom: 20px;
 }
 
+h2.subcenter {
+  margin-top: 55px;
+}
+
 .media>.pull-left{
   margin-right: 20px;
 }
@@ -1516,6 +1520,10 @@ ul.social_icons li  a i{
 .clients-comments  h4  span {
   font-weight: 700;
   font-style: oblique;
+}
+
+h3.subcenter {
+  margin-top: 0px;
 }
 
 .footer {
