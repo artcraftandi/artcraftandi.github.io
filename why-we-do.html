@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Art Craft and I</title>
+		<title>Kindergarten</title>
 		<link rel="shortcut icon" href="favicon.ico">
 
 		<!-- Bootstrap core CSS -->
@@ -39,12 +39,12 @@
 					<div class="collapse navbar-collapse navbar-ex1-collapse">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="integrated-curriculum.html">Integrated curriculum</a></li>
+							<li class="active"><a href="integrated-curriculum.html">Integrated curriculum</a></li>
 							<li><a href="products.html">Products</a></li>
 							<li><a href="gallery.html">Gallery</a></li>
 							<!--li><a href="blog.html">Blog</a></li-->
 							<li><a href="about.html">About us</a></li>
-							<li class="active"><a href="contact.html">Contact</a></li>
+							<li><a href="contact.html">Contact</a></li>
 							<!--li class="has-children">
 								<a href="about.html">Menu</a>
 								<ul class="children">
@@ -66,55 +66,29 @@
 			<section id="content" class="col-lg-7 col-md-8 col-sm-12">
 
 				<div class="cloud">
-					<h1>Contact</h1>
+					<h1>Integrated Curriculum</h1>
 				</div>
 
 				<div class="content-bg">
-					<br /><br />
-					<div class="col-lg-6 col-sm-12">
-						<span class="fa"></span> <span id="address">Deep Smurti, Plot no 89, Sec 28, Nr. Bagat Tarachand, Vashi, Mumbai</span><br /><!-- input your address on this line -->
-						<span class="fa"></span> +91 98212 50012<br />
-						<span class="fa"></span> akshada@artcraftandi.com<br />
-						<span class="fa"></span> artcraftandi.com
-					</div>
-					<div class="col-lg-6 col-sm-12">
-						<div class="fa social-media">
-							<a target="blank" href="https://www.facebook.com/ArtcraftandI">&#xf082;</a>
-							<a target="blank" href="https://twitter.com/artcraftandi">&#xf099;</a>
-							<!--a href="#">&#xf0d4;</a>
-							<a href="#">&#xf16d;</a>
-							<a href="#">&#xf08c;</a>
-							<a href="#">&#xf0d2;</a>
-							<a href="#">&#xf166;</a-->
-						</div>
-					</div>
-					<div class="clearfix"></div>
-					<div id="map">
-
-					</div><!-- end #map -->
-					<div class="clearfix"></div>
+					<h2 class="green-title"><span class="fa"></span> Skills</h2>
+					<p class="lead">Essential for application of knowledge. Skills need to be nurtured. A programme designed to age wise help this process achievable.</p>
+					<img src="images/placeholders/green-mid.png" alt="" class="img-border" />
+					<p>Skill development is an important aspect of the learning process. Skills help students to assimilate knowledge for conceptualization. These skills change according to age groups. Students build on these skills to make learning comprehensive and applicable. The Skills included are Kinesthetic, Communication, Social and Thinking. An amalgamation of these skills is essential for each age group on an individual and collective level. Also different nuances of every skill set needs to be concentrated upon chronologically.</p>
 
 					<div class="separator"></div>
 
-					<div id="note"></div>
-					<!--form class="w-clearfix" id="ajax-contact-form" action="/">
-						<div class="col-12">
-							<textarea name="message" id="message" placeholder="Your Message"></textarea>
-						</div>
-						<div class="col-6">
-							<input type="text" name="name" placeholder="Your Name" />
-						</div>
-						<div class="col-6">
-							<input type="text" name="email" placeholder="Your Email" />
-						</div>
-						<div class="col-12">
-						    <input type="text" name="subject" placeholder="Subject" />
-						</div>
-						<div class="col-12">
-							<input class="button red" type="submit" value=" SEND MESSAGE" />
-						</div>
-					</form-->
-					<div class="clearfix"></div>
+					<h2 class="green-title"><span class="fa"></span> Talent</h2>
+					<p class="lead">Talent is innate to an individual. The programme enriches this indigenous capacity in a child by.</p>
+					<img src="images/placeholders/orange-mid.png" alt="" class="img-border" />
+					<p>Talent is inborn and bred. The method of guided creativity helps students to discover and enhance their potential thus leading them onto a path of success. It helps to build on the strengths of individual students thus enhancing self esteem. This in turn helps the students to confidently make informed choices.</p>
+
+					<div class="separator"></div>
+
+					<h2 class="green-title"><span class="fa"></span> Concepts</h2>
+					<p class="lead"> <em>‘ensemble’</em> of the learning process. The programme is progressive as it helps in conceptualization of the academic process for a student.</p>
+					<img src="images/placeholders/yellow-mid.png" alt="" class="img-border" />
+					<p>For application of knowledge it is essential that students are given the opportunity to explore and build understanding of the world around. An hands on method helps students to solve personal inquiries thus setting indigenous patterns of that suit the each learner’s needs.</p>
+
 				</div>
 
 			</section>
@@ -156,28 +130,6 @@
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/custom.js"></script>
 		<script src="js/jquery.prettyPhoto.js"></script>
-		<script src="//maps.google.com/maps/api/js?sensor=false"></script>
-		<script src="js/gmaps.js"></script>
-		<script>
 
-			GMaps.geocode({
-				address: $('#address').html(),
-				callback: function(results, status) {
-					if (status == 'OK') {
-						map = new GMaps({
-							div: '#map',
-							lat: -12.043333,
-							lng: -77.028333
-						});
-						var latlng = results[0].geometry.location;
-						map.setCenter(latlng.lat(), latlng.lng());
-						map.addMarker({
-							lat: latlng.lat(),
-							lng: latlng.lng()
-						});
-					}
-				}
-			});
-		</script>
 	</body>
 </html>

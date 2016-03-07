@@ -70,7 +70,14 @@ img	{
 #wrapper	{
 	background: url(../images/wrapper.png) no-repeat;
 	background-size: 100% auto;
+    background-position: left bottom;
 	min-height: 1300px;
+}
+
+#wrapper .home  {
+    background: url(../images/wrapper-home.png) no-repeat;
+    background-size: 100% auto;
+    min-height: 1300px;
 }
 
 h2	{
@@ -115,6 +122,11 @@ header	{
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
+    width: 437px;
+    /* height: inherit; */
+    margin-left: -70px;
+    margin-top: -166px;
+    max-width: none;
 }
 
 nav	{
@@ -878,13 +890,13 @@ div.pp_default .pp_details {
 #wowslider-container1 {
 	zoom: 1;
 	position: relative;
-	max-width: 670px;
+	max-width: 865px;
 	z-index: 90;
 	border: none;
 	text-align: left; /* reset align=center */
 	position: absolute;
-	top: 128px;
-	left: 180px;
+	top: 36px;
+	left: -26px;
 }
 
 * html #wowslider-container1{ width: 1100px }
@@ -999,7 +1011,7 @@ div.pp_default .pp_details {
 #wowslider-container1 a.ws_next, #wowslider-container1 a.ws_prev {
 	position: absolute;
 	display: block;
-	bottom: 0;
+	bottom: 95px;
 	margin-top: -15px;
 	z-index: 60;
 	height: 48px;
@@ -1025,14 +1037,14 @@ div.pp_default .pp_details {
 #wowslider-container1:hover a.ws_prev	{ display: block; }
 
 #wowslider-container1 .ws_bullets {
-	top: 96px;
-	left: -130px;
+	top: 490px;
+	right: -120px;
 }
 
 #wowslider-container1 .ws-title{
 	position: absolute;
 	display: block;
-	bottom: 35px;
+	bottom: 135px;
 	left: 110px;
 	margin-right: 5px;
 	z-index: 50;
@@ -1072,6 +1084,16 @@ div.pp_default .pp_details {
 	-webkit-animation: wsBasic 11.6s infinite;
 }
 
+#wowslider-container1 .quote {
+   font: lighter 25px 'arial';
+   margin-top: -50px;
+   color: #ee4a52;
+}
+
+#wowslider-container1 .quote p{
+   font-size: inherit;
+}
+
 @keyframes wsBasic{0%{left: -0%} 25%{left: -0%} 50%{left: -100%} 75%{left: -100%} }
 @-moz-keyframes wsBasic{0%{left: -0%} 25%{left: -0%} 50%{left: -100%} 75%{left: -100%} }
 @-webkit-keyframes wsBasic{0%{left: -0%} 25%{left: -0%} 50%{left: -100%} 75%{left: -100%} }
@@ -1080,12 +1102,24 @@ div.pp_default .pp_details {
 	position: relative;
 }
 
-#content-homepage	{
-	margin-top: 650px;
+#content-homepage   {
+    margin-top: 825px;
 }
+
+#content-homepage.last  {
+    margin-top: 725px;
+}
+
+#content-homepage h1 {
+    font: 36px 'dimboregular', 'Fira Sans', sans-serif; 
+    color: #ec6713; 
+    margin-bottom: 60px;
+}
+
 
 #col-yellow,
 #col-green,
+#col-darkgreen,
 #col-orange	{
 	border-radius: 4px;
 	border-width: 5px 0 24px 0;
@@ -1100,9 +1134,14 @@ div.pp_default .pp_details {
 	border-color: #f29f34;
 }
 
-#col-green	{
-	background: #d5c651;
-	border-color: #c2b130;
+#col-green  {
+    background: #d5c651;
+    border-color: #c2b130;
+}
+
+#col-darkgreen	{
+	background: #c2b130;
+	border-color: #a1911c;
 }
 
 #col-orange	{
@@ -1110,24 +1149,54 @@ div.pp_default .pp_details {
 	border-color: #e25a00;
 }
 
-#ladybug	{
-	width: 58px;
-	height: 37px;
-	background: url(../images/ladybug.png) no-repeat;
-	background-size: cover;
-	position: absolute;
-	top: -42px;
-	left: 30px;
+#ladybug    {
+    width: 58px;
+    height: 37px;
+    background: url(../images/ladybug.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -42px;
+    left: 30px;
 }
 
-#butterfly	{
-	width: 63px;
-	height: 57px;
-	background: url(../images/butterfly.png) no-repeat;
-	background-size: cover;
-	position: absolute;
-	top: -40px;
-	left: -30px;
+#butterfly  {
+    width: 63px;
+    height: 57px;
+    background: url(../images/butterfly.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -40px;
+    left: -30px;
+}
+
+#owl    {
+    width: 58px;
+    height: 61px;
+    background: url(../images/owl.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -64px;
+    right: 30px;
+}
+
+#honeybee  {
+    width: 63px;
+    height: 57px;
+    background: url(../images/honeybee.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -40px;
+    right: -30px;
+}
+
+#bird  {
+    width: 93px;
+    height: 86px;
+    background: url(../images/bird.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -90px;
+    right: 50px;
 }
 
 /*	Pages
@@ -1170,6 +1239,34 @@ div.pp_default .pp_details {
 	background: url(../images/flower.png) center center no-repeat;
 	background-size: auto 100%;
 	margin: 20px 0;
+}
+
+.profile {
+    margin-top: 32px;
+}
+
+.profile img{
+    width: 55%;
+    display: inline;
+    float: right;
+}
+
+.profile h4{
+    text-transform: capitalize;
+}
+
+.scroll {
+    color: #61cbe6;
+    text-align: center;
+    opacity: 1;
+    font: 18px/25px 'Solomon Normal', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.scroll img {
+    width:4%;
 }
 
 /*	Blog
@@ -1586,7 +1683,6 @@ only screen and (min-device-pixel-ratio:1.5) and (max-width: 640px) {
 	}
 }
 .ul-features{
-    list-style: none;
     margin-left: -40px;
     text-align: justify;
 }
@@ -1595,7 +1691,7 @@ only screen and (min-device-pixel-ratio:1.5) and (max-width: 640px) {
 }
 .ul-features h5{
     margin-bottom: 0px;
-    display: inline;
+    display: block;
 }
 p   {
     text-align: justify;
