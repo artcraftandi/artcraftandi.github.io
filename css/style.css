@@ -180,7 +180,7 @@ nav ul .active a	{
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
 	z-index: 999;
-	padding: 20px 140px 80px 170px;
+	padding: 0px 140px 80px 170px;
 }
 
 nav ul ul {
